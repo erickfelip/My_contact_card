@@ -30,11 +30,11 @@ export default function Modal({ show, onClose, children }) {
         </div>
 
         <div className="headerr">
-          <p>Salve meu contato na sua agenda!</p>
+          <p>Save my contact!</p>
         </div>
         <div className="body">
           <Image
-            src="/images/qrcodecontato.png"
+            src="/images/qrcode.png"
             alt="qr-code-contato"
             width={250}
             height={250}
@@ -53,3 +53,5 @@ export default function Modal({ show, onClose, children }) {
     return null;
   }
 }
+
+//Add your qrcode on image src.
