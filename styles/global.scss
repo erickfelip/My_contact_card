@@ -16,6 +16,7 @@ a {
   font-size: 1em;
 
   &:hover {
+    cursor: pointer;
     text-decoration: underline;
   }
 }
@@ -42,7 +43,7 @@ a {
 
 .avatar {
   //Add your image
-  background: url(../assets/default.png) center no-repeat;
+  background: url(../assets/avatar.jpg) center no-repeat;
   width: 120px;
   height: 120px;
   border-radius: 100%;

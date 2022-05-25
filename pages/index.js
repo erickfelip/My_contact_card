@@ -11,9 +11,9 @@ export default function Home() {
         <div className="avatar"></div>
         <div className="profile">
           <div className="info">
-            <p> Your Name </p>
+            <p> Erick Felipe </p>
             <div className="position">
-              <p> Position </p>
+              <p> Desenvolvedor Front End </p>
             </div>
             <div className="profile-icons">
               <a
@@ -32,16 +32,27 @@ export default function Home() {
                 ></Modal>
               </a>
 
-              <a href="https://wa.me/" target="_blank" rel="noreferrer">
+              <a href="https://wa.me/5584992258566" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon
                   icon={["fab", "whatsapp"]}
                   size="2x"
                   style={{ width: 40, height: 40 }}
                 />
               </a>
-              <a href="mailto: " target="_blank" rel="noreferrer">
+              <a href="mailto: erickfelipe2010@gmail.com" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon
                   icon={("fab", "envelope")}
+                  size="2x"
+                  style={{ width: 40, height: 40 }}
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/erick-felipe-141311215/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={["fab", "linkedin"]}
                   size="2x"
                   style={{ width: 40, height: 40 }}
                 />

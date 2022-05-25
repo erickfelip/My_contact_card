@@ -2,6 +2,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   fab,
   faLinkedin,
+  faLinkedinIn,
   faTelegram,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
@@ -21,7 +22,8 @@ function initFontAwesome() {
     faWhatsapp,
     faMobile,
     faEnvelope,
-    faXmark
+    faXmark,
+    faLinkedinIn
   );
 }
 export default initFontAwesome;
