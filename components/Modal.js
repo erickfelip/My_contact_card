@@ -3,21 +3,27 @@ import ReactDom from "react-dom";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Modal({ show, onClose, children }) {
+export default function Modal({ show, id = "modal", onClose = () => {} }) {
   const [isBrowser, setIsBrowser] = useState(false);
 
   useEffect(() => {
     setIsBrowser(true);
   }, []);
 
+  const handleOutsideClick = (e) => {
+    if (e.target.id === id) {
+      onClose();
+      e.stopPropagation();
+    }
+  };
+
   function handleCloseModal(e) {
-    e.preventDefault();
     e.stopPropagation();
     onClose();
   }
 
   const modalContent = show ? (
-    <div className="overlay" onClick={handleCloseModal}>
+    <div id={id} className="overlay" onClick={handleOutsideClick}>
       <div className="modal">
         <div className="closebutton">
           <a href="#" onClick={handleCloseModal}>
